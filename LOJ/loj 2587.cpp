@@ -73,7 +73,7 @@ inline void dfs(int x,int fro) {
             ans+=1LL*val[x]*size[g2.e[i].to]*(siz-size[g2.e[i].to]);
     }
     ans+=1LL*val[x]*(siz-size[x])*size[x];
-    if(x<=n) ans+=1LL*val[x]*(siz-1);
+    if(x<=n) ans-=(siz-1);
 }
 int main() {
 #ifdef iloi
